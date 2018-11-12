@@ -16,12 +16,19 @@ namespace BusinessDays
 
         public bool IsBusinessDay(DateTime date)
         {
-            if (!Rules.Any())
-            {
-                throw new NoRulesException();
-            }
+            EnsureRulesPresence();
 
-            return Rules.All(r => r.IsBusinessDay(date));
+            return AllRulesSatisfied();
+
+            bool AllRulesSatisfied() => Rules.All(r => r.IsBusinessDay(date));
+
+            void EnsureRulesPresence()
+            {
+                if (!Rules.Any())
+                {
+                    throw new NoRulesException();
+                }
+            }
         }
 
         public class NoRulesException : Exception
