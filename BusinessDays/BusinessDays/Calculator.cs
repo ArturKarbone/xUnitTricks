@@ -22,15 +22,6 @@ namespace BusinessDays
             }
 
             return Rules.All(r => r.IsBusinessDay(date));
-
-            //foreach (var rule in Rules)
-            //{
-            //    if (!rule.IsBusinessDay(date))
-            //    {
-            //        return false;
-            //    }
-            //}
-            //return true;
         }
 
         public class NoRulesException : Exception
