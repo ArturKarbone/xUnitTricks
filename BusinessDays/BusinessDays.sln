@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessDays", "BusinessDays\BusinessDays.csproj", "{B43FFE30-207F-40E5-8064-FD29D4E0AEDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessDays", "BusinessDays\BusinessDays.csproj", "{B43FFE30-207F-40E5-8064-FD29D4E0AEDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessDays.Tests", "BusinessDays.Tests\BusinessDays.Tests.csproj", "{D14DC381-8AE7-48F0-90E0-92A45B78863E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessDays.Tests", "BusinessDays.Tests\BusinessDays.Tests.csproj", "{D14DC381-8AE7-48F0-90E0-92A45B78863E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0E63C6BE-8244-4009-9E38-0BA155DDA7E0}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.mD = Readme.mD
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
