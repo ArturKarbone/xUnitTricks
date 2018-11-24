@@ -9,9 +9,10 @@ namespace BusinessDays
     {
         protected List<IRule> Rules { get; } = new List<IRule>();
 
-        public void AddRule(IRule rule)
+        public Calculator AddRule(IRule rule)
         {
             Rules.Add(rule);
+            return this;
         }
 
         public bool IsBusinessDay(DateTime date)
