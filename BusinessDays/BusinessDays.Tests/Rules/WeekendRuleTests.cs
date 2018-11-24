@@ -1,10 +1,10 @@
-﻿using BusinessDays.Rules;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using BusinessDays.Rules;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace BusinessDays.Tests
+namespace BusinessDays.Tests.Rules
 {
     public class WeekendRuleTests
     {
