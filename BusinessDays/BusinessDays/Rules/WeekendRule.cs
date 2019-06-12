@@ -6,7 +6,9 @@ namespace BusinessDays.Rules
     {
         public bool IsBusinessDay(DateTime date)
         {
-            return !(date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Sunday);
+            return !IsWeekend();
+
+            bool IsWeekend() => date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Sunday;
         }
     }
 }
